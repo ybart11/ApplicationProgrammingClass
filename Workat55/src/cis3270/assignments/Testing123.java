@@ -1,9 +1,12 @@
+// yer 
+
+
 package cis3270.assignments;
 import java.util.Scanner;
 public class Testing123 {
 
 	public static void main(String[] args) {
-		// Testing to see how this will look in GitHub 
+		// Testing to see how this will look in GitHub
 		
 		Scanner input = new Scanner (System.in);
 		
