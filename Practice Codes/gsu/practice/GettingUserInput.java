@@ -1,4 +1,4 @@
-package gsu.edu.CIS3270;
+package gsu.practice;
 import java.util.Scanner;
 
 public class GettingUserInput {

@@ -1,4 +1,4 @@
-package gsu.CIS3270.homework;
+package cis3270.assignments;
 
 // Assignment 2.7
 
