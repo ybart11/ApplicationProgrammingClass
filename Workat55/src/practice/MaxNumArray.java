@@ -1,6 +1,6 @@
 package practice;
 
-public class Yer {
+public class MaxNumArray {
 
 	public static void main(String[] args) {
 		// getting the max number from a list 
