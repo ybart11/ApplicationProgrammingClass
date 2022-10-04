@@ -1,23 +1,25 @@
-// yer, testing123
-
-
 package cis3270.assignments;
-import java.util.Scanner;
+
+// current time in GMT (Greenwich Mean Time)
+// GMT is four hours ahead of EST TIME USA 
+
 public class Testing123 {
 
 	public static void main(String[] args) {
-		// Testing to see how this will look in GitHub
 		
-		Scanner input = new Scanner (System.in);
+		long totalMilliSeconds = System.currentTimeMillis();
+		long totalSeconds = totalMilliSeconds/1000;
+		long currentSecond = totalSeconds % 60;
+		long totalMinutes = totalSeconds / 60;
+		long currentMinute = totalMinutes % 60;
+		long totalHours = totalMinutes / 60;
+		long currentHour = totalHours  % 24;
 		
-		System.out.print("What is your favorite number? ");
-		int favNum = input.nextInt();
 		
-		// display results
-		System.out.println("Your favorite number is " + favNum);
 		
-		// close scanner 
-		input.close();
+		System.out.println("The current time is " + currentHour + ":" 
+		+ currentMinute + ":" + currentSecond + " GMT ");
+	
 	}
 
 }

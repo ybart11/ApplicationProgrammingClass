@@ -1,9 +1,9 @@
 package cis3270.assignments;
 
-// Assignment 2.7
+// Assignment 2.7 (Find the numbers of years)
 
 import java.util.Scanner;
-public class NumberOfYears {
+public class Chapter2_07 {
 
 	public static void main(String[] args) {
 		int years;

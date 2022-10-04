@@ -1,10 +1,10 @@
 package cis3270.assignments;
 
-// Assignment 2.5 
+// Assignment 2.6 (Sum the digits in an integer)
 
 import java.util.Scanner; // Needed to get user's input 
 
-public class SumDigitsInteger {
+public class Chapter2_06 {
 
 	public static void main(String[] args) {
 			
