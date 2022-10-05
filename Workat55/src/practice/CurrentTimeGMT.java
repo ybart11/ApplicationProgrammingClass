@@ -22,7 +22,7 @@ public class CurrentTimeGMT {
 		long totalHours = totalMinutes / 60;
 		
 		// Compute the current hour 
-		long currentHour = totalHours  % 24;
+		long currentHour = (totalHours  % 24); // subtract by 4 to display current local time
 		
 		
 		// Display results 

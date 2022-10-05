@@ -12,7 +12,7 @@ public class IndexMaxNumArray {
 		for (int i = 0; i < numbers.length; i++) {
 			if (numbers[i] >= max) {
 				max = numbers [i];
-				maxIndex = i;
+				maxIndex = i; // maxIndex = numbers[i] would be the way to get the actual number of array
 			}
 		}
 		

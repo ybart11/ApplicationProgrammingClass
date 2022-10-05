@@ -16,6 +16,7 @@ public class Yerrrrrr {
 		String name5 = input.next();
 		String name6 = input.next();
 		
+		System.out.println();
 		System.out.println("The six names you entered are: " + name1 + name2 + name3 + name4 +
 				name5 + name6);
 		
