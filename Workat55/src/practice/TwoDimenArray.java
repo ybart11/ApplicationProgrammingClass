@@ -8,6 +8,7 @@ public class TwoDimenArray {
 	for (int i = 0; i < list.length; i++) {
 		
 		for (int j = 0; j < list[i].length; j++) {
+			list[i][j] = (int)(Math.random() * 21);
 			System.out.print(list[i][j] + " ");
 		}
 		
