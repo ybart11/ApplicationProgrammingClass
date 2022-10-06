@@ -10,11 +10,15 @@ public class Chapter3_01 {
 		// Ask for user's input 
 		Scanner input = new Scanner (System.in);
 		
-		int a = input.nextInt(); 
-		int b = input.nextInt();
-		int c = input.nextInt(); 
+		System.out.print("");
+		double a = input.nextInt(); 
+		double b = input.nextInt();
+		double c = input.nextInt(); 
 		
-		int equation;
+		// b^2 - 4ac
+		double discriminant = (Math.pow(b, 2) - 4 * a * c); 
+		
+		
 				
 		
 
