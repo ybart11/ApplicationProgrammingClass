@@ -7,7 +7,7 @@ public class FindKeyInArray {
 		int [] list = {4, 3, 7, 8, 9, 22};
 
 		//System.out.println(Arrays.binarySearch(new int [] {1,3,5,7,9}, 23)); // will return -6 because it should be 
-		System.out.println(Arrays.binarySearch(list, 23)); // will return -6 because it should be 
+		System.out.println(Arrays.binarySearch(list, -2)); // will return -6 because it should be 
 
 	}
 
