@@ -7,6 +7,7 @@ public class Chapter3_17 {
 
 	public static void main(String[] args) {
 		
+		// array to store scissor-rock-paper
 		String [] gameList = {"scissor", "rock", "paper"};
 		
 		// User's input
@@ -18,15 +19,65 @@ public class Chapter3_17 {
 		// Random number between 0 and 2 
 		int randNum = (int)(Math.random() * 2);
 		
-		// Using if to see who won the game
-		if (userChoice == 0 )
+		// Use if statement to see who won the game
+		if (userChoice == 0) {
+			
+			if (randNum == 0) {
+				System.out.print("The computer is " + gameList[randNum] + "." + " You are " + gameList[userChoice]
+						+ ". It is a draw"); 
+			}
+			
+			else if (randNum == 1) {
+				System.out.print("The computer is " + gameList[randNum] + "." + " You are " + gameList[userChoice]
+						+ ". You lost");
+			}
+			
+			else if (randNum == 2) {
+				System.out.print("The computer is " + gameList[randNum] + "." + " You are " + gameList[userChoice]
+						+ ". You won");
+			}	
+			}
 		
-		// Display results
-		System.out.print("Random number: " + randNum);
-		System.out.print("\nThe computer is " + gameList[randNum]);
-		System.out.print("\nYou are " + gameList[userChoice]);
+		else if (userChoice == 1) { 
+			if (randNum == 0) {
+				System.out.print("The computer is " + gameList[randNum] + "." + " You are " + gameList[userChoice]
+						+ ". You won"); 
+			}
+			
+			else if (randNum == 1) {
+				System.out.print("The computer is " + gameList[randNum] + "." + " You are " + gameList[userChoice]
+						+ ". It is a draw");
+			}
+			
+			else if (randNum == 2) {
+				System.out.print("The computer is " + gameList[randNum] + "." + " You are " + gameList[userChoice]
+						+ ". You lost");
+			}
+		}
 		
-
+		else if (userChoice == 2) {
+			if (randNum == 0) {
+				System.out.print("The computer is " + gameList[randNum] + "." + " You are " + gameList[userChoice]
+						+ ". You lost"); 
+			}
+			
+			else if (randNum == 1) {
+				System.out.print("The computer is " + gameList[randNum] + "." + " You are " + gameList[userChoice]
+						+ ". You won");
+			}
+			
+			else if (randNum == 2) {
+				System.out.print("The computer is " + gameList[randNum] + "." + " You are " + gameList[userChoice]
+						+ ". It is a draw");
+			}
+			
+		}
+		
+		input.close(); 
+		
+			
+		}
+		
 	}
 
-}
+
