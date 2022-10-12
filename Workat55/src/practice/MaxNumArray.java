@@ -18,7 +18,7 @@ public class MaxNumArray {
 		for (int i = 0; i < numbers.length; i++) {
 			System.out.print(numbers[i] + " ");
 		}
-		System.out.println("\nThe max number number of this array is " + max);
+		System.out.println("\nThe max number number in this array is " + max);
 	}
 
 }
