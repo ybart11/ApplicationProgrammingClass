@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 //Assignment 9.17 ()
 
-public class Chapter9_17 {
+public class Chapter5_17 {
 
 	public static void main(String[] args) {
 		// Ask for user's input 
