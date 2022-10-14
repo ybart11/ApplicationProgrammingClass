@@ -14,7 +14,8 @@ public class Chapter5_51 {
 		// Get user's input for second string
 		System.out.print("Enter the second string: ");
 		String secondString = input.nextLine();
-		
+		input.close();
+
 		// find the minimum length of both strings
 		int minLength = firstString.length() < secondString.length() ? firstString.length() : secondString.length();
 		
@@ -33,7 +34,6 @@ public class Chapter5_51 {
 		}
 				System.out.println("The common prefix is " + firstString.substring(0, i));
 				
-				input.close();
 	}
 
 }

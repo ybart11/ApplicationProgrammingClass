@@ -27,7 +27,7 @@ public class Yer {
         System.out.println("The largest number is " + largest);
         System.out.println("The occurrence count is " + occurrence);
 
-
+        input.close();
 	}
 
 }
