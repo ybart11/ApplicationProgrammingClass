@@ -15,25 +15,25 @@ public class Chapter5_21 {
 		int numOfYears = input.nextInt();
 		
 		// header
-		System.out.print("Interest Rate		Monthly Payment		Total Payment");
+		System.out.println("\nInterest Rate		Monthly Payment		Total Payment");
 		// Loop to display table with interest rates
 		for (double i = 5; i <= 8; i += 0.125) {
 			System.out.printf("%.3f", i);
-			System.out.println("%         ");
+			System.out.print("%         		");
 			
 			double monthlyInterestRates = i / 1200;
 			double monthlyPayment = loanAmount * monthlyInterestRates / (1 - 1 / Math.pow(1 + monthlyInterestRates, numOfYears * 12));
 			
 			// Display results 
-			System.out.printf("%-19.2f", monthlyPayment);
-			System.out.printf("%-8.2f\n",(monthlyPayment * 12) * numOfYears);
+			System.out.printf("$%-19.2f", monthlyPayment);
+			System.out.printf("	$%-8.2f\n",(monthlyPayment * 12) * numOfYears);
 
 			
 			
 		}
 		
 		
-		
+		input.close();
 			
 		
 
