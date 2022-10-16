@@ -1,5 +1,6 @@
-package assignments.chapter6;
+package assignments.chapter7;
 
+import assignments.chapter6.PrimeNumberMethod;
 
 public class Yer {
 	public static void main(String[] args) {
