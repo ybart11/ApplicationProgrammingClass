@@ -1,5 +1,7 @@
 package practice;
 
+import java.util.Scanner;
+
 public class Methods {
 
 	// return max number of list
@@ -30,6 +32,18 @@ public class Methods {
 		}
 		
 		return sum;
+	}
+	
+	// fills an array with integers from user's input 
+	public static void fill (int [] array) {
+		
+		Scanner input = new Scanner (System.in);
+		
+		for (int i = 0; i < array.length; i++) {
+			array [i] = input.nextInt();
+		}
+		
+		input.close();
 	}
 
 
