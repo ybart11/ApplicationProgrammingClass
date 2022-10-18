@@ -19,6 +19,18 @@ public class Methods {
 		int [] list = {1,2,3,4,8};
 		System.out.print(maxNum(list)); 
 	}
+	
+	// Sum the digits in an integer
+	public static int sum(int n) {				// Example: 121 = 4 
+		int sum = 0;
+		
+		while (n != 0) {
+			sum += n % 10; // adds the last digit
+			n = n/10;	   // removes the last digit 
+		}
+		
+		return sum;
+	}
 
 
 }
