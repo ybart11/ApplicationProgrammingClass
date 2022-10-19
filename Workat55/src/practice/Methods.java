@@ -1,5 +1,7 @@
 package practice;
 
+// methods that can be helpful for the future 
+
 import java.util.Scanner;
 
 public class Methods {
@@ -51,6 +53,20 @@ public class Methods {
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + " ");
 		}
+	}
+	
+	// Reverse integer 
+	public static int reverse (int number) {
+		int reverse = 0;
+		
+		while (number != 0) {
+			reverse *= 10; // is ignored in first iteration
+			reverse += number % 10; // adds the last number
+			
+			number /= 10; // removes the last number
+		}
+		
+		return reverse;
 	}
 
 
