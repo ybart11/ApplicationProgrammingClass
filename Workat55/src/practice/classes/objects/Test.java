@@ -9,10 +9,10 @@ public class Test {
 		CarFactory car1 = new CarFactory("Red", 2000);
 		
 		// attributes 
-		System.out.println(car1.color);
+		//System.out.println(car1.color);
 		System.out.println(car1.weight);
 		car1.weight = 2000;
-		car1.color = "Red";
+		//car1.color = "Red";
 		
 		car1.start();
 		car1.stop();

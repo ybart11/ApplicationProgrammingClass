@@ -7,17 +7,21 @@ package practice.classes.objects;
 public class CarFactory { // java makes a method named after the class by default 
 	
 
-	public String color;
-	public double weight;
+	private String color; // instance variable, the scope is the whole class 
+	public double weight; // instance variable, the scope is the whole class 
 	
 	public CarFactory() {
-		color = "Black";
-		weight = 3000; 
+		//this.color = "Black";
+		//weight = 3000; 
+		
+		this("Black", 3000); // a method 
 	}
 	
-	public CarFactory(String c) {
-		color = c;
-		weight = 4000; 
+	public CarFactory(String color) {
+		
+		//this.color = color; 
+		//weight = 4000; 
+		this(color,4000); // same thing as the top 
 	}
 	
 	public CarFactory(String c, double w) {
@@ -33,6 +37,20 @@ public class CarFactory { // java makes a method named after the class by defaul
 	
 	public void stop() {
 		System.out.println("Car is stopping...");
+	}
+	
+	// getters
+	// for private 
+	public String getColor() { // get color to the user
+		
+		return this.color; // this means any reference that is trying to access this property when you create the object 
+	}
+	
+	
+	// setters 
+	// for private
+	public void setColor(String c) { // change the color the safe way. You protect the internal stuff of your class 
+		color = c;
 	}
 	
 	
