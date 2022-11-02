@@ -62,4 +62,80 @@ public class Test1 {
 }
 
 ------------------------------------------
+import java.util.Stack; 
+	public static void main (String [] args) {
+		
+		Stack s1 = new Stack(); // one data structure 
+		
+		s1.push(10); 
+		s1.push(20);
+		s1.push(30);
+		
+		System.out.println(s1.size());
+		System.out.println(s1.pop());
+		
+		
+	}
+	
+	
+	------------------------------------------------------------------------------------
+	
+	
+	
+	public static void main (String [] args) {
+		
+		Integer integer = new Integer("10"); //Wrapping, another way to convert string to int 
+		System.out.println(integer.intValue()); // unwrapping
+		}
+		
+		
+------------------------------------------
+	public static void main (String [] args) {
+		BigDecimal balance1 = new BigDecimal (10.5); //how to use big decimal 
+		BigDecimal balance2 = new BigDecimal (3); 	// need to import import java.math.BigDecimal;
+		
+		System.out.println(balance1.add(balance2));
+		
+	}
+------------------------------------------
+	public static void main (String [] args) {
+	
+		String st = "Hello Java";
+		String newStr = st.replace('a', 'z');
+		//String newStr = st.replace("a", "z"); // still works so it is known as overloaded 
+		System.out.println(newStr); 
+				
+		
+	}
+------------------------------------------
+	// regular expression 
+		"(?/d{3})?-?/4{3}-?\d{4}" // pattern for phone number
+		
+		".+@.+\..+" // pattern to write email format 
+------------------------------------------
+		
+		String str = "Hello"; 
+		
+		str = "Python"; // It is mutable but created garbage
+		-----------------
+		StringBuilder str = new StringBuilder ("Hello"); 
+		str.append(" Python"); 
+		System.out.println(str.toString()); // how to avoid creating garbage 
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
+------------------------------------------
 

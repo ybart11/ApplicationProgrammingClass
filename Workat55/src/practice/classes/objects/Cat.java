@@ -2,7 +2,7 @@ package practice.classes.objects;
 
 public class Cat {
 	int age; 
-	String name; 
+	String name = "Cookie";
 	
 	public void meow() {
 		System.out.println("Meow");

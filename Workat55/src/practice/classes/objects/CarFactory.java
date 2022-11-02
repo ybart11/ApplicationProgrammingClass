@@ -5,7 +5,8 @@ package practice.classes.objects;
 
 
 public class CarFactory { // java makes a method named after the class by default 
-	
+	//CarFactory()
+	// 
 
 	private String color; // instance variable, the scope is the whole class 
 	public double weight; // instance variable, the scope is the whole class 
