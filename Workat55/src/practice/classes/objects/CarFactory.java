@@ -4,7 +4,7 @@ package practice.classes.objects;
 
 
 
-public class CarFactory { // java makes a method named after the class by default 
+public class CarFactory { // java makes a method named after the class by default, constructor
 	//CarFactory()
 	// 
 
