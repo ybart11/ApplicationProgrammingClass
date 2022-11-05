@@ -3,7 +3,7 @@ package practice.classes.objects;
 class Circle {
 	// The radius of this circle 
 	
-	double radius;
+	double radius; // instance variable because it is dependent on a specific instance 
 	
 	static void header() {
 		System.out.println("Chapter 9, Example 9.3 " +
@@ -23,6 +23,8 @@ class Circle {
 	}
 	
 	// Create method to return the area of this circle
+	// Referred to as an instance method because you can invoke it only on a specific instance 
+	// Non-static 
 	double getArea () {
 		return radius * radius * Math.PI;
 	}

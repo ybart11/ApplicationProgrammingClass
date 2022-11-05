@@ -10,7 +10,7 @@ public class CircleTest {
 		Circle.header();
 		
 		// Create a circle with a radius 1
-		Circle c1 = new Circle(); 
+		Circle c1 = new Circle(); // create an object from the constructor 
 		System.out.println("The area of the circle of radius " 
 				+ c1.radius + " is " + c1.getArea());
 		
