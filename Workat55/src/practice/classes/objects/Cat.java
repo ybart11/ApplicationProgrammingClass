@@ -2,7 +2,13 @@ package practice.classes.objects;
 
 public class Cat {
 	int age; 
-	String name = "Cookie";
+	String name; 
+	
+	static void header() {
+		System.out.println("---------------------------"
+				+ "\nWhich one do you want to know about"); 
+	}
+	
 	
 	public void meow() {
 		System.out.println("Meow");
@@ -12,4 +18,5 @@ public class Cat {
 		System.out.println("Ding dong");
 	}
 	
+
 }

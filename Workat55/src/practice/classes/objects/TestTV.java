@@ -10,7 +10,7 @@ public class TestTV {
 		// TODO Auto-generated method stub
 		
 		// Create object for first TV
-		TV tv1 = new TV(); 
+		TV tv1 = new TV();
 		
 		// Check if Tv1 is on 
 		System.out.println("Is TV1 on? ");

@@ -4,22 +4,18 @@ public class AwesomeJavaProgram {
 
 	public static void main(String[] args) {
 		// display header 
-		header(); 
+		Cat.header(); 
 		// display result of class
 		Cat cookie = new Cat();
 		
 		cookie.age = 10;
-		cookie.name = cookie.name; 
+		cookie.name = "Cookie"; 
+		
+		System.out.println(cookie.age);
 
 	
 		
 	}
-	
-	public static void header() {
-		System.out.println("---------------------------"
-				+ "\nWhich one do you want to know about"); 
-		
-	
-	}
+
 
 }
