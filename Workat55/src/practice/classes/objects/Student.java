@@ -2,7 +2,8 @@ package practice.classes.objects;
 
 public class Student {
 	
-	String name;
+	String name; // name has the default value null 
+	int age; // age has default value 0 
 	String classification; 
 	String major; 
 	int studentID = 2542145;
@@ -13,8 +14,10 @@ public class Student {
 		
 		System.out.println("\nA. Name " +
 						   "\nB. Classification " +
-						   "\nC. Major" +
+						   "\nC. Major" + 
 						   "\nD. Student ID"); 
 	}
 
 }
+
+

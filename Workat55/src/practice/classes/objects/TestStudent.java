@@ -6,10 +6,11 @@ public class TestStudent {
 	public static void main(String[] args) {
 		
 		Student s1 = new Student(); 
-		s1.name = "Yovany";
+		s1.name = "Yovany"; 
 		s1.classification = "Junior";
-		s1.major = "CIS";
-	
+		s1.major = "CIS"; 
+		
+		
 		
 		Student.header();
 		
@@ -32,7 +33,7 @@ public class TestStudent {
 		else
 			System.out.println("Invalid option");
 		
-		input.close();
+		input.close(); 
 		
 		
 		
