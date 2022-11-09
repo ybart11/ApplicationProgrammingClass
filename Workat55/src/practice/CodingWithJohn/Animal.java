@@ -2,7 +2,7 @@ package practice.CodingWithJohn;
 
 public class Animal {
 	
-	// This animal class has two fields 
+	// This animal class has two fields,  
 	int age;
 	String name;
 

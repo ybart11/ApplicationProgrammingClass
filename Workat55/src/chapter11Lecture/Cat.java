@@ -38,4 +38,8 @@ public class Cat extends Animal { // known as inheritance
 	public void setHasStripes(boolean hasStripes) {
 		this.hasStripes = hasStripes;
 	} 
+	
+	public void sound() {
+		System.out.println("Meow meow");
+	}
 }

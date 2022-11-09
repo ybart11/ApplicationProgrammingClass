@@ -1,0 +1,69 @@
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Object o; 
+		Animal a1 = new Animal ("Dog", "Grey");
+		Animal a2 = new Animal ("Dog", "Grey");
+		Animal a3; 
+		Cat cat1 = new Cat();
+		Object obj = a2;
+		
+		a3 = cat1;
+		Cat cat4 = (Cat)a3;
+		
+		Object obj6 = cat1; 
+		// ((Cat)obj6)
+		
+		
+		if (obj instanceof String) {
+			String st = (String)obj;
+		}
+			
+		
+	}
+
+}
+
+-------------------------------------------------------
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Object o; 
+		Animal a1 = new Animal ("Dog", "Grey");
+		Animal a2 = new Animal ("Dog", "Grey");
+		
+		System.out.println(a1.equals(a2));
+	
+	}
+
+}
+
+^^ after making 
+
+	@Override
+	public boolean equals(Object obj) {
+		
+		if (obj instanceof Animal) {
+			
+			return ((Animal)obj).name.equals(this.name);
+		}
+		
+		else {
+			return false;
+		}
+	}
+-------------------------------------------------------
+
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+-------------------------------------------------------
+
