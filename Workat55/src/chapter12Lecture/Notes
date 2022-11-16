@@ -1,0 +1,85 @@
+public class Test {
+
+	public static void main(String[] args) {
+		
+		try {
+			
+			//int[] a = new int [4];
+			//System.out.println(a[100]);
+			//System.out.println(3/0);
+			
+			//int[] b = null;
+			//System.out.println(b.length);
+			
+			// 1	Connection
+			// 2	Run query 
+			
+			
+		} catch (ArrayIndexOutOfBoundsException ex) {
+			
+			System.out.println("I caught the stone1");
+		} catch (ArithmeticException ex) {
+			System.out.println("I caught the stone2");
+
+		} catch (Exception ex) {
+			System.out.println("I caught the stone3");
+		}	finally {
+			
+			// 3	close connection 
+		}
+
+		System.out.println("End");
+	}
+
+}
+
+
+-------------------------------------------------
+public class Test {
+	public static int testException (int a) {
+		int b;
+		b = a / 0;
+		return b + 1;
+	}
+	
+	public static void main (String[] args) {
+		
+		// can also create this in method 
+		try {
+			System.out.println(testException(10));
+		} catch (Exception ex) {
+			System.out.println("Exception occured");
+		}
+		
+		System.out.println("End");
+		
+	}
+
+}
+-------------------------------------------------
+public class Test {
+	public static int testException (int a) throws Exception{ // if you do not want to put it in a try and catch; checked 
+		
+		throw new Exception(); // 
+	}
+	
+	public static void main (String[] args) { // you do not want to throw it in the main 
+		
+		// can also create this in method 
+
+		try {
+			testException(10); 
+		} catch (Exception ex) {
+			System.out.println("ex");
+		}
+		System.out.println("End");
+		
+	}
+
+}
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------

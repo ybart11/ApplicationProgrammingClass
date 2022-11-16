@@ -1,27 +1,24 @@
 package chapter12Lecture;
 
 public class Test {
-
-	public static void main(String[] args) {
+	public static void checkFlightCapacity() throws FlightFullException {
 		
+		// run a query check the database if there is still empty seat
+		throw new FlightFullException ("The flight is full");
+	}
+	
+	public static void main (String[] args) { // you do not want to throw it in the main 
+		
+
 		try {
 			
-			int[] a = new int [4];
-			System.out.println(a[100]);
+			checkFlightCapacity();
 			
-			System.out.println(3/0);
-			
-		} catch (ArrayIndexOutOfBoundsException ex) {
-			
-			System.out.println("I caught the stone");
-		} catch (ArithmeticException ex) {
-			System.out.println("I caught the stone");
-
-		} catch (Exception ex) {
-			System.out.println("I caught the stone");
+		} catch (FlightFullException ex) {
+			System.out.println(ex);
 		}
-
 		System.out.println("End");
+		
 	}
 
 }
