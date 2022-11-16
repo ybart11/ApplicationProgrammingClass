@@ -1,6 +1,6 @@
 package chapter11Lecture;
 
-public class Animal extends Object { // Object is the parent class of every class in Java, directly or indirectly 
+public abstract class Animal extends Object { // Object is the parent class of every class in Java, directly or indirectly 
 	
 	private String name; // a property
 	private String color; // a property
@@ -53,5 +53,8 @@ public class Animal extends Object { // Object is the parent class of every clas
 			return false;
 		}
 	}
-}
+	
+	public abstract void sound(); // makes the whole class abstract, cannot create object anymore 
+	// if a class wants to be non abstract, they have to implement every abstract method 
 
+}
