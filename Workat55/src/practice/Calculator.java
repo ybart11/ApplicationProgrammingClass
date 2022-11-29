@@ -1,5 +1,16 @@
 package practice;
 
+/**
+ * To run code using the command prompt: 
+ * 1. Click on run in eclipse menu
+ * 2. Click on Run Configurations
+ * 3. You will see program window. Select your program for which you are passing arguments.
+ *    Then click on arguments tab. 
+ * 4. Click on run button. Your program will execute
+ *
+ *
+ */
+
 public class Calculator {
 	
 	/** Main method */
