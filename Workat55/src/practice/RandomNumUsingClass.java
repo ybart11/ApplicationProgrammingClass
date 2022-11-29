@@ -8,7 +8,7 @@ public class RandomNumUsingClass {
 		Random rand = new Random ();
 		
 		// generate random number between 0 and 4 using the class Random
-		System.out.println( 1 + rand.nextInt(5));
+		System.out.println(rand.nextInt(5));
 
 	}
 

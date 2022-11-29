@@ -7,7 +7,7 @@ public class Calculator {
 		// Check number of strings passed
 		if (args.length != 3 ) {
 			System.out.println("Usage: java Calculator operand1 operator operand2");
-			System.exit(1);
+			System.exit(0);
 		}
 
 	
