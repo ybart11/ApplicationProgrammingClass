@@ -1,9 +1,9 @@
-package practice;
+package practice.mostlyArrays;
 
 public class TwoDimenArray {
 	public static void main(String [] args) { // how to print a two dimensional list
 		
-	int [][] list = new int [5][3];
+	int [][] list = new int [3][5]; // rows columns 
 	
 	for (int i = 0; i < list.length; i++) {
 		
@@ -14,6 +14,7 @@ public class TwoDimenArray {
 		
 		System.out.println();
 	}
+	
 }
 }	
 
