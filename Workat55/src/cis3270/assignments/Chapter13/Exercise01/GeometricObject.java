@@ -72,8 +72,8 @@ public abstract class GeometricObject {
 	@Override 
 	// Return a string representation of this object
 	public String toString() {
-		return "created on " + dateCreated + "\ncolor: "
-				+ " and filled: " + filled; 
+		return "Created on " + dateCreated + "\ncolor: " + getColor()
+				+ "\nfilled: " + filled; 
 	}
 	
 	// Abstract method getArea 
