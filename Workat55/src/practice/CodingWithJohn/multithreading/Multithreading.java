@@ -1,7 +1,10 @@
 package practice.CodingWithJohn.multithreading;
 
+
+
 public class Multithreading {
 	
+	// Main method
 	public static void main (String [] args) {
 		
 		/* How to start a multithread if you extend the Thread class */
@@ -14,19 +17,25 @@ public class Multithreading {
 //		myThing2.start();
 		
 		// Create and start five threads 
-		for (int i = 0; i < 5; i++) {
-			MultithreadThing myThing = new MultithreadThing(i);
-			myThing.start();
+//		for (int i = 0; i < 5; i++) {
+//			MultithreadThing myThing = new MultithreadThing(i);
+//			myThing.start();
 
-		}
+//		}
 		
 		//  throw new RuntimeException();
 		
 		
 		
 		/* How to start a multithread if you implement the Runnable interface */
+	for (int i = 0; i < 5; i++) {
+		MultithreadThing myThing = new MultithreadThing(i);
+		Thread myThread = new Thread (myThing);
+		myThread.start();
 		
 		
 	}
 		
 }
+	
+} 

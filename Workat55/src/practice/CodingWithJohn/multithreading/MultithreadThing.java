@@ -1,6 +1,6 @@
 package practice.CodingWithJohn.multithreading;
 
-public class MultithreadThing extends Thread {
+public class MultithreadThing implements Runnable {
 	
 	private int threadNumber;
 	
@@ -12,10 +12,10 @@ public class MultithreadThing extends Thread {
 		for (int i = 1; i <= 5; i++) {
 			System.out.println(i + " from thread " + threadNumber);
 			
-			if (threadNumber == 3) {
-				throw new RuntimeException();
-			}
-			
+//			if (threadNumber == 3) {
+//				throw new RuntimeException();
+//			}
+//			
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
