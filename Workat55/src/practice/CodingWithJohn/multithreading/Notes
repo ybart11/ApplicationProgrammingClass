@@ -3,3 +3,24 @@
 
 The ability to execute multiple different paths code at the same time. 
 
+Must use start method if you actually want multiple concurrent threads. 
+
+Whenever you start multiple threads at the same time, it will be executed at random. 
+
+If one of the threads blows up and throws an exception, it doesn't stop the rest from executing. 
+
+Two ways to create threads in Java: 
+	1. Extending the Thread class  
+		- If you extend this class, you cannot extend any other class because Java doesn't allow it
+	2. Implementing Runnable interface
+		- Requires small extra step
+		- Allows you to extend a class and still be able to implement this interface 
+		
+
+Can use join() method if you want your program to stop and wait for that thread to complete
+	- Kind of defeats the purpose of multi threading in this example, but you can see the purpose of it. 
+	
+
+isAlive() method returns a boolean to let you know if the that thread is still running
+		
+
